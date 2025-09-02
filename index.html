@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fabricio Mafra — Portfólio</title>
+  <meta name="description" content="Portfólio de Fabricio Mafra — Identidade visual & Social Media">
+  <meta property="og:title" content="Fabricio Mafra — Portfólio">
+  <meta property="og:description" content="Identidade visual, social media e direção de arte.">
+  <meta property="og:image" content="assets/project1-cover.jpg">
+
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header>
+    <div class="container nav" role="navigation" aria-label="Navegação principal">
+      <div class="brand">
+        <a href="#home" aria-label="Ir para o início"><img src="assets/logo.png" alt="Logo" /></a>
+        <div class="brand-name">Fabricio Mafra</div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="socials">
+        <a class="icon-btn" href="https://www.instagram.com/fabriciomafra_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="icon-btn" href="https://wa.me/message/KNOKTYV4QPIZI1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12a9 9 0 1 0-3 6.5L21 21l-1.5-3A8.9 8.9 0 0 0 21 12z" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="eyebrow">Designer Gráfico & Social Media</div>
+          <h1 class="reveal">Design que comunica — Identidade & Social Media</h1>
+          <p class="lead reveal">Crio identidades visuais e conteúdo para marcas de comida e pequenas empresas. Portfólio com projetos selecionados, pensado para apresentar processo e resultado.</p>
+          <div class="ctas reveal">
+            <a class="cta" href="#portfolio">Ver Portfólio</a>
+            <a class="secondary-cta" href="#contact">Contrate</a>
+          </div>
+        </div>
+        <div class="hero-visual parallax" data-speed="0.35">
+          <img src="assets/project1-cover.jpg" alt="Capa do projeto"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="container">
+      <h2>Portfólio</h2>
+
+      <div class="tabs" role="tablist" aria-label="Projetos">
+        <button class="tab-btn" role="tab" aria-selected="true" data-tab="project1">Projeto 1</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="project2">Projeto 2</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="project3">Projeto 3</button>
+      </div>
+
+      <div class="projects-grid" id="projects">
+        <article class="project-card reveal" tabindex="0" role="button" data-project="project1">
+          <img src="assets/project1-cover.jpg" alt="Capa Projeto 1">
+          <h3>Projeto 1 — Pança's</h3>
+          <p>Identidade visual e posts para restaurante.</p>
+        </article>
+
+        <article class="project-card reveal" tabindex="0" role="button" data-project="project2">
+          <img src="assets/project2-cover.jpg" alt="Capa Projeto 2">
+          <h3>Projeto 2 — Café X</h3>
+          <p>Branding e embalagens.</p>
+        </article>
+
+        <article class="project-card reveal" tabindex="0" role="button" data-project="project3">
+          <img src="assets/project3-cover.jpg" alt="Capa Projeto 3">
+          <h3>Projeto 3 — Delivery Y</h3>
+          <p>Estratégia de social media e templates.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal-content" role="document">
+        <button id="modalClose" class="modal-close" aria-label="Fechar">Fechar ✕</button>
+        <div class="modal-inner">
+          <div class="modal-main">
+            <img src="assets/project1-1.jpg" alt="Imagem principal do projeto" />
+          </div>
+          <aside class="modal-side">
+            <h3 id="modalTitle">Título do projeto</h3>
+            <p id="modalDesc">Descrição do projeto, papel do designer e resultados.</p>
+            <div class="palette">
+              <strong>Paleta:</strong>
+              <div class="swatches">
+                <span style="background:var(--yellow)"></span>
+                <span style="background:var(--red)"></span>
+                <span style="background:var(--blue)"></span>
+              </div>
+            </div>
+            <div class="modal-actions">
+              <a id="modalInstagram" href="#" target="_blank" rel="noopener" class="cta">Ver no Instagram</a>
+              <a id="modalWhatsapp" href="#" target="_blank" rel="noopener" class="secondary-cta">Abrir WhatsApp</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="container">
+      <h2>Sobre</h2>
+      <div class="about-grid">
+        <div class="avatar">
+          <img src="assets/avatar.jpg" alt="Foto do designer (placeholder)">
+        </div>
+        <div>
+          <p>Olá — eu sou o Fabricio, designer gráfico focado em identidade visual e conteúdo para marcas de comida. Crio soluções visuais que comunicam e convertem.</p>
+          <h4>Serviços</h4>
+          <ul>
+            <li>Identidade visual</li>
+            <li>Social Media e templates</li>
+            <li>Direção de arte</li>
+            <li>UI básico e landing pages</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contato</h2>
+      <form action="https://formspree.io/f/SEUID" method="POST" aria-label="Formulário de contato">
+        <input type="text" name="name" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="subject" placeholder="Assunto">
+        <textarea name="message" placeholder="Mensagem" rows="6" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="direct-contact">
+        <p>Ou me chama direto no WhatsApp:</p>
+        <a href="https://wa.me/message/KNOKTYV4QPIZI1" target="_blank" rel="noopener noreferrer">21 96670-5936 — WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Fabricio Mafra</div>
+      <div class="credits">Feito por <strong>Fabricio Mafra</strong> — Identidade visual & Social Media.</div>
+    </div>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger via CDN -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
